@@ -8,19 +8,6 @@
     or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 */
 
-/**
- * This simple sample has no external dependencies or session management, and shows the most basic
- * example of how to create a Lambda function for handling Alexa Skill requests.
- *
- * Examples:
- * One-shot model:
- *  User: "Alexa, ask Space Geek for a space fact"
- *  Alexa: "Here's your space fact: ..."
- */
-
-/**
- * App ID for the skill
- */
 var APP_ID = 'arn:aws:lambda:us-east-1:865113720107:function:dailyStoic'; //replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
 /**
@@ -29,12 +16,8 @@ var APP_ID = 'arn:aws:lambda:us-east-1:865113720107:function:dailyStoic'; //repl
 var AlexaSkill = require('./AlexaSkill');
 var storage = require('./storage');
 
-/**
- * SpaceGeek is a child of AlexaSkill.
- * To read more about inheritance in JavaScript, see the link below.
- *
- * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance
- */
+
+ 
 var DailyStoic = function () {
     AlexaSkill.call(this, APP_ID);
 };
