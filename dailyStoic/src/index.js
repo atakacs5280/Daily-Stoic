@@ -17,7 +17,7 @@ var AlexaSkill = require('./AlexaSkill');
 var storage = require('./storage');
 
 
- 
+
 var DailyStoic = function () {
     AlexaSkill.call(this, APP_ID);
 };
