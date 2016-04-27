@@ -8,7 +8,7 @@
     or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 */
 
-var APP_ID = 'arn:aws:lambda:us-east-1:865113720107:function:dailyStoic'; //replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
+var APP_ID = 'amzn1.echo-sdk-ams.app.a1ff6b81-b0f4-42f7-adef-c98ed78a141a'; //replace with "amzn1.echo-sdk-ams.app.[your-unique-value-here]";
 
 /**
  * The AlexaSkill prototype and helper functions
@@ -34,7 +34,7 @@ DailyStoic.prototype.eventHandlers.onSessionStarted = function (sessionStartedRe
 
 DailyStoic.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     console.log("DailyStoic onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
-    handleNewFactRequest(session, response);
+    //handleNewFactRequest(session, response);
 };
 
 /**
@@ -47,7 +47,7 @@ DailyStoic.prototype.eventHandlers.onSessionEnded = function (sessionEndedReques
 };
 
 DailyStoic.prototype.intentHandlers = {
-    "GetNewFactIntent": function (intent, session, response) {
+    "GetNewQuoteIntent": function (intent, session, response) {
         handleNewFactRequest(session, response);
     },
 
