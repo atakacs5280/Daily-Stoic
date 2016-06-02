@@ -34,7 +34,7 @@ DailyStoic.prototype.eventHandlers.onSessionStarted = function (sessionStartedRe
 
 DailyStoic.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     console.log("DailyStoic onLaunch requestId: " + launchRequest.requestId + ", sessionId: " + session.sessionId);
-    //handleNewFactRequest(session, response);
+    handleNewFactRequest(session, response);
 };
 
 /**
@@ -74,7 +74,7 @@ function handleNewFactRequest(session, response) {
       // Create speech output
       var speechOutput = "Here's your Daily Stoic quote: " + currentQuote;
 
-      response.tellWithCard(speechOutput, "Daily Stoic", speechOutput);
+      response.tell(speechOutput);
     });
 }
 
