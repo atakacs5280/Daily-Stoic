@@ -1,7 +1,7 @@
-GetNewQuoteIntent ask Daily Stoic for a stoic quote.
-GetNewQuoteIntent tell me a quote
-GetNewQuoteIntent tell me a daily stoic quote
-GetNewQuoteIntent give me a quote
-GetNewQuoteIntent give me a daily stoic quote
-GetNewQuoteIntent give me a quote from Daily Stoic
-GetNewQuoteIntent give me some stoic quotes
+GetNewQuoteIntent Alexa, a stoic quote.
+GetNewQuoteIntent Alexa, tell me a quote.
+GetNewQuoteIntent Alexa, ask daily stoic to tell me a daily stoic quote.
+GetNewQuoteIntent Alexa, give me a quote.
+GetNewQuoteIntent Alexa, tell daily stoic to give me a daily stoic quote.
+GetNewQuoteIntent Alexa, give me a quote from Daily Stoic.
+GetNewQuoteIntent Alexa, give me some stoic quotes.
